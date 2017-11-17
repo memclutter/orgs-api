@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'oauth2_provider',
+    'domain.orgs',
+    'domain.products',
+    'domain.refs',
 ]
 
 MIDDLEWARE = [
