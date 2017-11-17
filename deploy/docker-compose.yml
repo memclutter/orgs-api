@@ -1,0 +1,41 @@
+version: '3'
+services:
+
+  db:
+    build: ./db
+    restart: always
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  django:
+    build:
+      context: ../
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DEBUG: 'off'
+      ALLOWED_HOSTS: '127.0.0.1,localhost'
+      DATABASE_URL: psql://orgs:orgs@db:5432/orgs
+      SECRET_KEY: 'secret-key'
+      STATIC_ROOT: '/usr/src/orgs/public'
+    volumes:
+      - django_public:/usr/src/orgs/public
+      - django_run:/usr/src/orgs/run
+    command: sh -c /usr/src/orgs/run.sh
+
+  nginx:
+    build: ./nginx
+    restart: always
+    depends_on:
+      - django
+    ports:
+      - 80:80
+    volumes:
+      - django_public:/var/www/html/static
+      - django_run:/var/run/django
+
+volumes:
+  db:
+  django_public:
+  django_run:

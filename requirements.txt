@@ -6,3 +6,4 @@ django-filter==1.1.0
 django-oauth-toolkit==1.0.0
 djangorestframework==3.7.3
 psycopg2==2.7.3.2
+uWSGI==2.0.15
