@@ -42,8 +42,7 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 
 class OrganizationArticleSerializer(serializers.HyperlinkedModelSerializer):
     product = ProductSerializer(many=False, read_only=True)
-    organization = OrganizationSerializer(many=False, read_only=True)
 
     class Meta:
         model = Article
-        fields = ('id', 'product', 'organization')
+        fields = ('id', 'product')

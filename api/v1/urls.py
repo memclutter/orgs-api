@@ -6,6 +6,7 @@ from . import views
 
 router = DefaultRouter()
 router.register(r'organizations/(?P<district>\d+)', views.OrganizationByDistrictViewSet)
+router.register(r'organizations/(?P<district>\d+)/(?P<organization>\d+)/articles', views.ArticleByOrganizationViewSet)
 
 urlpatterns = [
     url(r'^auth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
