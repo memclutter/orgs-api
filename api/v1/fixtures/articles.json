@@ -1,0 +1,83 @@
+[
+  {
+    "model": "orgs.article",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "organization": 1,
+      "price": "56.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "organization": 2,
+      "price": "55.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 3,
+    "fields": {
+      "product": 2,
+      "organization": 1,
+      "price": "67.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "organization": 2,
+      "price": "66.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 5,
+    "fields": {
+      "product": 3,
+      "organization": 1,
+      "price": "34.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 6,
+    "fields": {
+      "product": 3,
+      "organization": 2,
+      "price": "4.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 7,
+    "fields": {
+      "product": 4,
+      "organization": 3,
+      "price": "1000.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 8,
+    "fields": {
+      "product": 5,
+      "organization": 4,
+      "price": "500.00"
+    }
+  },
+  {
+    "model": "orgs.article",
+    "pk": 9,
+    "fields": {
+      "product": 6,
+      "organization": 2,
+      "price": "300.00"
+    }
+  }
+]

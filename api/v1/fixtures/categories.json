@@ -1,0 +1,23 @@
+[
+  {
+    "model": "refs.category",
+    "pk": 1,
+    "fields": {
+      "name": "\u041f\u0440\u043e\u0434\u0443\u043a\u0442\u044b"
+    }
+  },
+  {
+    "model": "refs.category",
+    "pk": 2,
+    "fields": {
+      "name": "\u0421\u043f\u043e\u0440\u0442"
+    }
+  },
+  {
+    "model": "refs.category",
+    "pk": 3,
+    "fields": {
+      "name": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u044f"
+    }
+  }
+]

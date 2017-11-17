@@ -1,0 +1,16 @@
+[
+  {
+    "model": "refs.district",
+    "pk": 1,
+    "fields": {
+      "name": "\u042e\u041c\u0420"
+    }
+  },
+  {
+    "model": "refs.district",
+    "pk": 2,
+    "fields": {
+      "name": "\u0426\u041c\u0420"
+    }
+  }
+]

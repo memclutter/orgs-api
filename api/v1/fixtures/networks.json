@@ -1,0 +1,23 @@
+[
+  {
+    "model": "orgs.network",
+    "pk": 1,
+    "fields": {
+      "name": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u041e\u0411\u0416\u041e\u0420\u0410"
+    }
+  },
+  {
+    "model": "orgs.network",
+    "pk": 2,
+    "fields": {
+      "name": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u0411\u0435\u0439-\u0411\u0435\u0433\u0438"
+    }
+  },
+  {
+    "model": "orgs.network",
+    "pk": 3,
+    "fields": {
+      "name": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u041e\u0422\u0414\u041e\u0425\u041d\u0418"
+    }
+  }
+]
