@@ -45,4 +45,4 @@ class OrganizationArticleSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Article
-        fields = ('id', 'product')
+        fields = ('id', 'product', 'price')

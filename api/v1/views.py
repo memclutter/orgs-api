@@ -25,4 +25,15 @@ class ArticleByOrganizationViewSet(ReadOnlyModelViewSet):
     def get_queryset(self):
         district = get_object_or_404(District, pk=self.kwargs['district'])
         organization = get_object_or_404(Organization, pk=self.kwargs['organization'], districts__in=[district])
-        return self.queryset.filter(organization=organization)
+
+        queryset = self.queryset.filter(organization=organization)
+
+        price_from = self.request.query_params.get('price_from', None)
+        if price_from is not None:
+            queryset = queryset.filter(price__gte=price_from)
+
+        price_to = self.request.query_params.get('price_to', None)
+        if price_to is not None:
+            queryset = queryset.filter(price__lte=price_to)
+
+        return queryset
