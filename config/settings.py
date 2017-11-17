@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'oauth2_provider',
+    'api.v1',
     'domain.orgs',
     'domain.products',
     'domain.refs',
